@@ -19,8 +19,6 @@ export function Details() {
   const details = useSelector(selectDetails);
   const isLoading = useSelector(selectLoading);
 
-  console.log('on page deets', details)
-
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch({type: 'DETAILS_FETCH_REQUESTED', payload: {id}})
@@ -43,13 +41,5 @@ export function Details() {
     </PageWrapper>
   );
 }
-
-const Country = styled.li`
-  color: blue;
-`;
-
-const ErrorText = styled.span`
-  color: ${p => p.theme.text};
-`;
 
 const List = styled.div``;
