@@ -7,7 +7,6 @@ export function* fetchCountries() {
 
   try {
     const { countries } = yield call(request, requestURL);
-    console.log(countries)
     if (countries?.length > 0) {
       yield put(actions.fetchCountriesSuccess(countries));
     } else {
