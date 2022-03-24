@@ -22,7 +22,7 @@ export function Details() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch({type: 'DETAILS_FETCH_REQUESTED', payload: {id}})
-  }, [dispatch]);
+  }, [dispatch, id]);
 
   return (
     <PageWrapper>
