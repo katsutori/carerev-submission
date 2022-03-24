@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { useInjectReducer, useInjectSaga } from 'utils/redux-injectors';
 import { saga} from './saga';
 import { key, detailsReducer } from './reducer';
-import { selectDetails, selectLoading, selectError } from './selectors';
+import { selectDetails, selectLoading } from './selectors';
 import { LoadingIndicator } from 'app/components/LoadingIndicator';
 import { PageWrapper } from 'app/components/PageWrapper';
 
